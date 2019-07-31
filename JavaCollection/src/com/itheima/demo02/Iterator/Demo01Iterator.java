@@ -25,9 +25,9 @@ public class Demo01Iterator {
 		coll.add("麦迪");
 		coll.add("詹姆斯");
 		
-		Iterator<String> it = coll.iterator();
-		while(it.hasNext()){
-			String next = it.next();
+		Iterator<String> it = coll.iterator();	//获取迭代器的实现类对象
+		while(it.hasNext()){					//判断集合中还有没有下一个元素
+			String next = it.next();			//1.取出下一个元素	2.会把指针向后移动一位
 			System.out.println(next);
 		}
 		//没有元素 返回false 再取出元素  会抛出异常NosuchElementException
