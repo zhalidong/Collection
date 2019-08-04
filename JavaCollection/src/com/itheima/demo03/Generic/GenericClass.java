@@ -19,7 +19,4 @@ public class GenericClass<E> {
 	public void setName(E name) {
 		this.name = name;
 	}
-	
-	
-	
 }
