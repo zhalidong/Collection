@@ -21,15 +21,43 @@ import java.util.HashMap;
 public class Demo01Map {
 	
 	public static void main(String[] args) {
-		show02();
+		show03();
 		
 	}
 	/*
-	 * public V remove(Object key)
+	 * boolean containsKey(Object key) 判断集合中是否包含指定的键
+	 * 包含返回true   不包含返回false
+	 * 
 	 */
 	
-	private static void show02() {
+	
+	
+	/*
+	 * public V get(Object key)	根据指定的键  在map集合中获取对应的值
+	 * 返回值：
+	 * 		key存在  返回对应的value值
+	 * 		key不存在 返回null
+	 * 
+	 */
+	
+	
+	private static void show03() {
 		
+		
+	}
+	/*
+	 * public V remove(Object key)   把指定的键  所对应的键值元素  在map集合中删除 返回被删除的元素的值
+	 * 返回值 V 
+	 * 		key存在 v返回被删除的值
+	 * 		key不存在 v返回null
+	 */
+	
+
+	private static void show02() {
+		HashMap<String, Integer> map = new HashMap<>();
+		map.put("查", 199);
+		Integer i = map.remove("查");
+		System.out.println(i);
 	}
 	/*
 	 * public V put(K key,V value);把指定的键与指定的值添加到map集合中
@@ -38,7 +66,7 @@ public class Demo01Map {
 	 * 			存储键值对的时候 key重复	 会使用新的value替换map中重复的value 返回被替换的value值
 	 */
 	private static void show01() {
-		//创建map集合对象 动态
+		//创建map集合对象 多态
 		HashMap<String,String> map = new HashMap<>();
 		
 		String v1 = map.put("李晨", "范冰冰1");
